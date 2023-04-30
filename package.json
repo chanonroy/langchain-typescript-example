@@ -1,0 +1,11 @@
+{
+  "name": "langchain-typescript-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chanonroy/langchain-typescript-example.git",
+  "author": "Chanon Roy <chanonroy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "langchain": "^0.0.66"
+  }
+}
