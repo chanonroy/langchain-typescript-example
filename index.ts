@@ -3,10 +3,13 @@ import { OpenAI } from "langchain/llms/openai";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-const model = new OpenAI({
-  openAIApiKey: process.env.OPEN_AI_KEY,
-  temperature: 0.9,
-});
+const model = new OpenAI(
+  {
+    openAIApiKey: process.env.OPENAI_API_KEY,
+    temperature: 0.9,
+  },
+  { organization: process.env.ORG_ID }
+);
 
 const run = async () => {
   const res = await model.call(
